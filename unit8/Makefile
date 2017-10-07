@@ -3,7 +3,7 @@ ROOT=..
 PLATFORM=linux
 include $(ROOT)/Make.defines.$(PLATFORM)
 
-PROGS =	open creat close read write dup fcntl atomic_io
+PROGS =	fork wait racecondition exec echo system
 all:	$(PROGS)
 
 %:	%.c $(LIBAPUE)

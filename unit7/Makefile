@@ -3,7 +3,7 @@ ROOT=..
 PLATFORM=linux
 include $(ROOT)/Make.defines.$(PLATFORM)
 
-PROGS =	open creat close read write dup fcntl atomic_io
+PROGS =	atexit argv env env2 jmp getuid getgid
 all:	$(PROGS)
 
 %:	%.c $(LIBAPUE)
