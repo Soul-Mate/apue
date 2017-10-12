@@ -1,9 +1,10 @@
+
 ROOT=..
 #PLATFORM=$(shell $(ROOT)/systype.sh)
 PLATFORM=linux
 include $(ROOT)/Make.defines.$(PLATFORM)
 
-PROGS =	signal kill raise sleep1 sleep2 alarm_read1 alarm_read2 sigset1
+PROGS =	signal kill raise sleep1 sleep2 alarm_read1 alarm_read2 sigaction_signal sigjmp
 all:	$(PROGS)
 
 %:	%.c $(LIBAPUE)
