@@ -46,7 +46,8 @@
             "name": "Win32",
             "includePath": [
                 "${workspaceRoot}",
-                "D:/develop/MinGW/include"
+                "D:/develop/MinGW/include",
+                "${workspaceRoot}/include"
             ],
             "defines": [
                 "_DEBUG",
@@ -55,7 +56,7 @@
             "intelliSenseMode": "msvc-x64",
             "browse": {
                 "path": [
-                    "${workspaceRoot}",
+                    "${file}/include",
                     "D:/develop/MinGW/include"
                 ],
                 "limitSymbolsToIncludedHeaders": true,

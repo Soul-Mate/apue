@@ -4,7 +4,7 @@ ROOT=..
 PLATFORM=linux
 include $(ROOT)/Make.defines.$(PLATFORM)
 
-PROGS =	signal kill raise sleep1 sleep2 alarm_read1 alarm_read2 sigaction_signal sigjmp
+PROGS =	signal kill raise sleep1 sleep2 alarm_read1 alarm_read2 sigaction_signal sigjmp sigipc
 all:	$(PROGS)
 
 %:	%.c $(LIBAPUE)
