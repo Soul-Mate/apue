@@ -25,5 +25,6 @@ main(int argc, const char * argv[])
 	if (err !=0 )
 		err_sys("pthread_join err");
 	printf("thread returned %ld", (long)res);	
+
 	return 0;
 }
