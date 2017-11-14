@@ -4,11 +4,11 @@ ROOT=..
 PLATFORM=linux
 include $(ROOT)/Make.defines.$(PLATFORM)
 
-PROGS =	pthread_create printids pthread_join pexit pcancel pcleanup pnosync pmutex1 pmutex2 deadlock1 deadlock2
+PROGS =	pthread_create printids pthread_join pexit pcancel pcleanup pnosync pmutex1 pmutex2 deadlock1 producer_consumer
 all:	$(PROGS)
 
 %:	%.c $(LIBAPUE)
-	$(CC) $(CFLAGS) $@.c -lpthread -lrt  -o $@ $(LDFLAGS) $(LDLIBS)
+	$(CC) $(CFLAGS) $@.c -lpthread -lrt -g -o $@ $(LDFLAGS) $(LDLIBS)
 
 clean:
 	rm -f $(PROGS) $(TEMPFILES) *.o
