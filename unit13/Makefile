@@ -4,7 +4,7 @@ ROOT=..
 PLATFORM=linux
 include $(ROOT)/Make.defines.$(PLATFORM)
  
-PROGS = nblock select1
+PROGS = nblock select1 aio1
 all:	$(PROGS)
 
 %:	%.c $(LIBAPUE)
