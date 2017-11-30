@@ -3,6 +3,8 @@
         "signal.h": "c",
         "_mingw.h": "c",
         "apue.h": "c",
-        "stdio.h": "c"
+        "stdio.h": "c",
+        "pthread.h": "c",
+        "select.h": "c"
     }
 }
