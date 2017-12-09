@@ -3,7 +3,7 @@ ROOT=..
 PLATFORM=linux
 include $(ROOT)/Make.defines.$(PLATFORM)
 
-PROGS = bind_unix_socket unix_socket_server unix_socket_client
+PROGS = bind_ud ud_stream_server ud_stream_client
 all:	$(PROGS)
 
 %:	%.c $(LIBAPUE)
